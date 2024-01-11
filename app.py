@@ -19,9 +19,10 @@ def propos():
     return render_template('propos.html'  )
 
 
-@app.route('/sign up')
-def formation():
-    return render_template('sign up.html'  )
+@app.route('/inscription')
+def inscription():
+    return render_template('inscription.html'  )
+    
 
 @app.route('/user')
 def user():

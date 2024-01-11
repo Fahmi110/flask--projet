@@ -1,54 +1,45 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%} 
 
 
-{%block main %}
-<!-- {% for message in get_flashed_messages() %} -->
-<div class="alert alert-danger alert-dismissible fade show mt-5" role="alert">
-  <!-- {{ message }} -->
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<!-- {% endfor %} -->
 
-
-<section class="row border  ">
-    <div class="col">
-        <form class=" p-5 mt-5 mx-5 rounded" action="/user" method="POST">
-            <h2>Ajouter un Nouveau User</h2>
-            <div class="mb-3">
-                <label for="exampleInputNom" class="form-label">Nom </label>
-                <input type="name" class="form-control" id="exampleInputNom" aria-describedby="name" name="Nom">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"> 
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword2" class="form-label">retaper Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" name="repass">
-              </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Ajouter</button>
-            <a href="/inscription">s'?</a>?
-          </form>
+{% block main %}
+<h1 class="text-start mt-5 px-5 text-info">s'inscrier</h1>
+<div class="container d-flex justify-content-end align-items-center">
+<!-- <h2 class="text-center"> we will teach you everything on tech<h2>
+<h2 class="text-center" > and so easy</h2> -->
+<div class="container d-flex justify-content-between mt-5">
+<form>
+  
+  <div class="mb- ">
+    <label for="exampleInputPassword1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="mb-">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
-    <div class="col  " >
-        <img src="{{url_for('static', filename='images/img.png')}}" alt="img.png" class="w-100  " height="700px">
+
+    
+    <div class="mb- ">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
     
-</section>
+    <div class="mb- ">
+      <label for="exampleInputPassword1" class="form-label">conferm password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
 
-
-
-
-
+  <img src= "{{url_for('static', filename='images/img9.webp')}}" alt="images" width="700">
+  
+</div>
 
 {%endblock%}
