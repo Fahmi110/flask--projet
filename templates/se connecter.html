@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+
+
+{%block main %}
+
+
+<div class=" mt-5 text-info  mx-5 "> <h2>SE CONNECTER</h2></div>
+
+<section class="d-flex " >
+  
+  
+      
+        <form class=" p-5 mt-5 mx-5 rounded" action="/SE CONNECTER" method="POST">
+          
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"> 
+        
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+              
+            </div>
+            <div class="mb-3">
+            <div class="mb-3 form-check">
+            
+            <button type="submit" class="btn btn-info">SE CONNECTER</button>
+            <a class="mx-3 text-info" href=""> s'inscrire</a>
+            <a href="/se connecter"></a>
+          </form>
+    </div>
+  </div>
+    <div class="col text-end mx-5 " >
+        <img src="{{url_for('static', filename='images/img11.webp')}}" alt="img.png" class="w-90  " height="500px">
+    </div>
+  
+</section>
+
+
+
+
+
+
+{%endblock%}

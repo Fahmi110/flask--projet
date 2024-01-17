@@ -9,9 +9,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/contact')
-def contact():
-    return render_template('contact.html' )
+@app.route('/levels')
+def levels():
+    return render_template('levels.html' )
 
 
 @app.route('/propos')
@@ -19,9 +19,9 @@ def propos():
     return render_template('propos.html'  )
 
 
-@app.route('/inscription')
-def inscription():
-    return render_template('inscription.html'  )
+@app.route('/se connecter')
+def   seConnecter():
+    return render_template('se connecter.html'  )
     
 
 @app.route('/user')
