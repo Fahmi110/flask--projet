@@ -3,38 +3,42 @@
 
 
 {% block main %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
 
-<section#2 class=" bg-light d-flex ">
+<!-- <h2 class="  px-5 py-4 ">LEVELS </h2> -->
+<section class="  d-flex  ">
 <!-- <div class=" row d-flex bg-light"> -->
-    <h2 class=" text-center">LEVELS 1</h2>
-<div class="col bg">
-    <div class="col m-3 text-black" >LEVEL 1</div>
-    <div class="col m-3 text-black" >LEVEL 2</div>
-    <div class="col m-3 text-black" >LEVEL 3</div>
-    <div class="col m-3 text-black" >LEVEL 4</div>
-    <div class="col m-3 text-black" >LEVELE 5</div>
-    <div class="col m-3 text-black" >LEVEL 6</div></div>
+    <!-- <h2 class=" text-center">LEVELS 1</h2> -->
+<div class="container bg-dark text-white ">
+  <h1 class="   py-4 text-info text-center ">LEVELS </h1>
+    <div class="col m-3 text-  py-3 " > <h5>LEVEL 1</div></h5>
+    <div class="col m-3 text-  py-3"  > <h5>LEVEL 2</div></h5>
+    <div class="col m-3 text-  py-3" > <h5>LEVEL 3</div></h5>
+    <div class="col m-3 text-  py-3" > <h5>LEVEL 4</div></h5>
+    <div class="col m-3 text-  py-" > <h5>LEVEL 5</div></h5>
+    <div class="col m-3 text- py-3" > <h5>LEVEL 6</div></h5>
+  </div>
 
-<div class="row ">
-    <h2 class="col">LEVELS 1</h2>
+<div class="container">
+    <h2 class=" text-center py-5">LEVEL 1</h2>
     <form>
       
-      <div class="mb- 3">
+      <div class="mb- 3 px-5">
         <label for="exampleInputPassword1" class="form-label"></label>
         <input type="text" class="form-control" id="exampleInputPassword1">
       </div>
-        <div class="mb-">
+        <div class="mb- px-5" >
           <label for="exampleInputEmail1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control bt-5 " id="exampleInputEmail1" aria-describedby="emailHelp">
        
         </div>
-<a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class=" py-5  text-center" ><a href="#" class="btn btn-info px-5">commencer</a></div>
+<!-- <a href="#" class="btn btn-info px-5">commencer</a> -->
 </div>
 </div>
 </div>
 </div>
 </div>
-</section#2>
+</section>
+
 
 {%endblock%}
