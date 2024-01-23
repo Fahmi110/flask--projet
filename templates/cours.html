@@ -1,0 +1,103 @@
+{% extends 'base.html'%}
+
+
+
+
+
+{% block main %}
+
+
+
+
+
+<!-- <h2 class="  px-5 py-4 ">LEVELS </h2> -->
+<section class="  d-flex  ">
+    <!-- <div class=" row d-flex bg-light"> -->
+        <!-- <h2 class=" text-center">LEVELS 1</h2> -->
+
+  
+    <div class="container bg-dark  text-white">
+      
+  
+        <div class="col m-3 text-  py-3 " > <h5>mes cours</div></h5>
+        <div class="col m-3 text-  py-3" > <h5>cours termine</div></h5>
+        <div class="col m-3 text-  py-" > <h5>cour conseeille</div></h5>
+        <div class="col m-3 text- py-3 " > <h5>profil</div></h5>
+      </div>
+     
+      <div class="container bg- white ">
+
+        <div class="row text-center"> 
+          <h1 class="text black py-3 px-5 text-start">MES COURS</h1>
+             <div class="col">
+             
+             
+                  <div class="card bg-dark text-white text-center" style="width: 16rem;" >
+                       <img class="" src= " {{url_for('static', filename='images/img10.webp')}} " class="card-img-top" alt="..." >
+                       <div class="card-body">
+                         <h5 class="card-title">LEVEL 1</h5>
+                         <p class="card-text">99%</p>
+                         <a href="#" class="btn btn-info px-5">suivre</a>
+   
+                       </div>
+                     </div> 
+                  </div>
+
+
+
+ 
+           <div class="col">
+           
+           
+                <div class="card bg-dark text-white text-center" style="width: 16rem;" >
+                     <img class="" src= " {{url_for('static', filename='images/img10.webp')}} " class="card-img-top" alt="..." >
+                     <div class="card-body">
+                       <h5 class="card-title">LEVEL 2</h5>
+                       <p class="card-text">90%</p>
+                       <a href="#" class="btn btn-info px-5">suivre</a> 
+                     </div>
+                   </div> 
+                </div>
+
+                <div class="container bg- white py-5">
+                  <div class="row text-center"> 
+                    <h1 class="text black text-start px- mb-4  "> COURS TERMINE</h1>
+                       <div class="col">
+
+                
+               
+                  <div class="card bg-dark text-white text text-center" style="width: 16rem;" >
+                       <img class="" src= " {{url_for('static', filename='images/img10.webp')}} " class="card-img-top" alt="...">
+                       <div class="card-body">
+                         <h5 class="card-title ">introduction</h5>
+                         <p class="card-text">100%</p>
+                         <a href="#" class="btn btn-info px-5">suivre</a>
+                       </div>
+                     </div> 
+                   
+             </div>
+             
+             <div class="col"> 
+               
+              <div class="card bg-dark text-white text text-center" style="width: 16rem;" >
+                   <img class="" src= " {{url_for('static', filename='images/img10.webp')}} " class="card-img-top" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">level 0</h5>
+
+                     <p class="card-text">100%</p>
+                     <a href="#" class="btn btn-info px-5">suivre</a>
+                   
+                   </div>
+                 </div> 
+               
+         
+        </div> 
+      
+
+    </section>
+    
+    
+
+
+
+{%endblock%}
