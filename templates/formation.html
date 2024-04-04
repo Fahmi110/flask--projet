@@ -4,55 +4,177 @@
 
 {% block main %}
 
-<div class="d-flex justify-content-between bg-dark mt-1 ">
+<div class="d-flex justify-content-between bg-dark mt-2  py-4">
 
   <div class="text-center mt-5  ">
   <h1 class="text-white display-5"> Get your scholl lessons<span class="text-info"> at home </span></h1>
   <h4 class="mt-4 text-white">we will offer you a greet online school in this
        path we wil have a great time to laern together</h4>
   <!-- <img src= "{{url_for('static', filename='images/img.png')}}" alt="images" width="700"> -->
-  <a href="#" class="btn btn-info mt-4 ">se connecter</a>
+  <a href="#" class="btn btn-info mt-2 ">se connecter</a>
   
   </div>
   
-  <img class="" src= "{{url_for('static', filename='images/home.webp')}}" alt="images" width="500">
+  <img class="" src= "{{url_for('static', filename='images/formation.svg')}}" alt="images" width="500">
   </div>
 
-<!-- <h2 class="  px-5 py-4 ">LEVELS </h2> -->
-<section class="  d-flex py-4 ">
-<!-- <div class=" row d-flex bg-light"> -->
-    <!-- <h2 class=" text-center">LEVELS 1</h2> -->
-<div class="container bg-dark text-white ">
-  <h1 class="   py-4 text-info text-center ">FORMATION</h1>
-    <div class="col m-3 text-  py-3 " > <h5>LEVEL 1</div></h5>
-    <div class="col m-3 text-  py-3"  > <h5>LEVEL 2</div></h5>
-    <div class="col m-3 text-  py-3" > <h5>LEVEL 3</div></h5>
-    <div class="col m-3 text-  py-3" > <h5>LEVEL 4</div></h5>
-    <div class="col m-3 text-  py-" > <h5>LEVEL 5</div></h5>
-    <div class="col m-3 text- py-3" > <h5>LEVEL 6</div></h5>
+
+
+<h1 class="text-center py-5"> OUR COURSES</h1>
+
+
+
+
+<section class="bg-info ">
+
+<div class="container  py-5 px-" >
+     <div class="row text-center "> 
+          <div class="col">
+          
+          
+               <div class="card bg-info text-white text-center" style="width: 16rem;" >
+                    <img class="" src= " {{url_for('static', filename='images/level1.jpg')}} " class="card-img-top" alt="..." height="250 " width="" >
+                    <div class="card-body bg-dark ">
+                      <h5 class="card-title ">LEVEL 1</h5>
+                      <p class="card-text">DUREE: <span class="text-info"> MOIS.</span></p>
+                      <a href="#" class="btn btn-info">s'inscrir</a>
+                      <a href="#" class="btn btn-info m-3">voir plus</a>
+
+                    </div>
+                  </div> 
+               </div>
+           
+          <div class="col ">
+               
+               <div class="card bg-info text-white  text-center" style="width: 16rem;" >
+                    <img class="" src= " {{url_for('static', filename='images/level2.jpg')}} " class="card-img-top" alt="..." width="">
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title ">LEVEL 2</h5>
+                      <p class="card-text">DUREE:<span class="text-info"> MOIS.</span></p>
+                      <a href="#" class="btn btn-info">s'inscrir</a>
+                      <a href="#" class="btn btn-info m-3">voir plus</a>
+                      
+                    </div>
+                  </div> 
+                
+          </div>
+
+          <div class="col mx-5 "> 
+               
+               <div class="card bg-dark text-white text text-center" style="width: 16rem;" >
+                    <img class="" src= " {{url_for('static', filename='images/level3.jpg')}} " class="card-img-top" alt="..." height="250">
+                    <div class="card-body">
+                      <h5 class="card-title">level 3</h5>
+                      <p class="card-text">DUREE:<span class="text-info"> MOIS.</span></p>
+                      <a href="#" class="btn btn-info">s'inscrir</a>
+                      <a href="#" class="btn btn-info m-3">voir plus</a>
+                    </div>
+                  </div> 
+                
+          </div>
+     
+
+
+          
+               
+                       </div> 
+                     
+               </div>
+              </section>
+               
+          <section class="d-flex justify-content-between ">
+            <img class="" src= " {{url_for('static', filename='images/contacts.png')}} " class="card-img-top" alt="..." height="450" width="700">
+  <div class="container py-5 px-5 ">
+
+    
+    
+  <div class="form header md-4">
+    <h1 class="py-4"> contact us </h1>
   </div>
 
-<div class="container">
-    <h2 class=" text-center py-5">LEVEL 1</h2>
-    <form>
-      
-      <div class="mb- 3 px-5">
-        <label for="exampleInputPassword1" class="form-label"></label>
-        <input type="text" class="form-control" id="exampleInputPassword1">
-      </div>
-        <div class="mb- px-5" >
-          <label for="exampleInputEmail1" class="form-label"></label>
-          <input type="email" class="form-control bt-5 " id="exampleInputEmail1" aria-describedby="emailHelp">
-       
-        </div>
-        <div class=" py-5  text-center" ><a href="#" class="btn btn-info px-5">commencer</a></div>
-<!-- <a href="#" class="btn btn-info px-5">commencer</a> -->
+<form class="form ">
+<div class="form-floating md-3">
+<input type="text " class="form-control  " id="folating" placeholder="name"/>
+<label for="floatInput "> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>name</label>
 </div>
-</div>
-</div>
-</div>
-</div>
-</section>
 
+<form class="form px-2 ">
+<div class="form-floating md-3">
+<input type="email" class="form-control " id="folating" placeholder="email"/>
+<label for="floatInput"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+  <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1"/>
+</svg> email</label>
+</div>
+
+
+<form class="form ">
+  <div class="form-floating md-3">
+  <input type="text" class="form-control " id="folating" placeholder="name"/>
+  <label for="floatInput"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+  </svg> contact number</label>
+  </div>
+  
+<form class="form">
+<div class="form-floating md-3">
+<textarea type="text" class="form-control " id="folating" placeholder="message"></textarea>
+<label for="floatInput"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+</svg> message</label>
+
+</div>
+
+
+<button type="submit" class="btn btn-info my-3"> submit</button>
+</form>
+
+</div>
+
+  </section>
+
+   
+<footer class=" bg-dark ">
+
+  <p class="">
+       <a href="/"> 
+        <p class="text-end">
+  back to top
+  
+        </p>    
+       </a>
+  </p>
+  <div class="container ">
+       <div class="row text-white text-center">
+     <div class="col "> <H4 class="text-info">MENUE</H4>
+       <div class="col" >ACCUEIL</div>
+       <div class="col" >CONTACT</div>
+       <div class="col" >CONTACT</div>
+     </div>
+     
+     <div class="col"> <H3 class="text-info">LEVELS</H3>
+       <div class="col" >LEVEL 1</div>
+       <div class="col" >LEVEL 2</div>
+       <div class="col" >LEVEL 3</div>
+       <div class="col" >LEVEL 4</div>
+       <div class="col" >LEVELE 5</div>
+       <div class="col" >LEVEL 6</div>
+     </div>
+     
+     <div class="col"><H3 class="text-info"> RESEAEUX SOCIAUX</H3>
+       <div class="col" >FACEBOOK</div>
+       <div class="col" >YOUTUBE</div>
+       <div class="col" >INSTAGRAM</div>
+     </div>
+     </div>
+     
+  
+  
+  </footer>
+  
+  
+  
 
 {%endblock%}
