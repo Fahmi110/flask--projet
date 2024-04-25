@@ -6,7 +6,8 @@
     <title>green school</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/all.css')}}">
 </head>
 <body>
 <header>
@@ -27,7 +28,7 @@
                 <!-- <a class="nav-link active" aria-current="page" href="levels">LEVELS</a> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link active"   aria-current="page"href="">COURSES</a>
+                <a class="nav-link active"   aria-current="page"href="formation">COURSES</a>
               </li>
 
                 <li class="nav-item">
@@ -68,17 +69,16 @@
             </ul>
           </div>
         </div>
-      </nav>
-</header>
+      </nav> 
+     
+ </header>
 <main>
 
 
+  
+  {% block main %} {%endblock%}
 
-  
-  
-  
-  
-{% block main %} {%endblock%}
+
 </main>
 <footer>
             <script src="{{url_for('static', filename='js/bootstrap.bundle.js')}}"></script>

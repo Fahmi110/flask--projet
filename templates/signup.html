@@ -1,0 +1,66 @@
+{% extends 'base.html'%} 
+
+
+
+{% block main %} 
+
+<h1 class="text-start mt-5 px-5 text-info">s'inscrire</h1>
+<div class="container d-flex justify-content-end align-items-center">
+<!-- <h2 class="text-center"> we will teach you everything on tech<h2>
+<h2 class="text-center" > and so easy</h2> -->
+<div class="container d-flex justify-content-between mt-5">
+
+  
+
+  {% with messages=  get-flashed-messages ()  %}
+    {% if messages %}
+    <ul class="messages">
+      {% for message in messages%}
+      <li class="{{message.category}}">
+        {{message}}
+      </li>
+      {% endfor%}
+    </ul>
+    {% endif%} 
+  {% endwith%} 
+
+             
+
+  <form class=" p-5 mt-5 mx-5 rounded" action="/SIGNUP" method="POST"> 
+  
+    <div class="mb-">
+      <label for="Email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="Email" name="email" aria-describedby="email">
+      <div id="Email" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <div class=" form-group mb- ">
+      <label for="text" class="form-label">firstName</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" >
+    </div>
+    
+    <div class="mb">
+      <label for="Password1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="Password1">
+    </div>
+    
+    
+    <div class="mb- ">
+      <label for="Password2" class="form-label">conferm password</label>
+      <input type="password" class="form-control" id="Password2">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-info px-5">Submit</button>
+    
+  </form>
+
+  <img src= "{{url_for('static', filename='images/img9.webp')}}" alt="images" width="700">
+  
+</div>
+  </div>
+
+
+{%endblock%}
